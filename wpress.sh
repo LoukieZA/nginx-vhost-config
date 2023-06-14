@@ -14,7 +14,7 @@ systemctl enable mariadb.service
 mysql_secure_installation
 
 ##Install MariaDB and PHP
-sudo apt-get install php ph7.4-mysql ph7.4-fpm ph7.4-curl ph7.4-gd ph7.4-intl ph7.4-mbstring ph7.4-soap ph7.4-xml ph7.4-xmlrpc ph7.4-zip mariadb-server mariadb-client ph7.4-json
+sudo apt-get install php7.4 php7.4-mysql php7.4-fpm php7.4-curl php7.4-gd php7.4-intl php7.4-mbstring php7.4-soap php7.4-xml php7.4-xmlrpc php7.4-zip mariadb-server mariadb-client php7.4-json
 sudo systemctl start mariadb
 sudo systemctl enable mariadb
 sudo systemctl start php7.4-fpm
