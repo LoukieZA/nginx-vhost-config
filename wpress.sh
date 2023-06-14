@@ -14,12 +14,12 @@ systemctl enable mariadb.service
 mysql_secure_installation
 
 ##Install MariaDB and PHP
-sudo apt-get install php php-mysql php-fpm php-curl php-gd php-intl php-mbstring php-soap php-xml php-xmlrpc php-zip mariadb-server mariadb-client php-json
+sudo apt-get install php ph7.4-mysql ph7.4-fpm ph7.4-curl ph7.4-gd ph7.4-intl ph7.4-mbstring ph7.4-soap ph7.4-xml ph7.4-xmlrpc ph7.4-zip mariadb-server mariadb-client ph7.4-json
 sudo systemctl start mariadb
 sudo systemctl enable mariadb
-sudo systemctl start php8.1-fpm
-sudo systemctl enable php8.1-fpm
-sudo systemctl status php8.1-fpm
+sudo systemctl start php7.4-fpm
+sudo systemctl enable php7.4-fpm
+sudo systemctl status php7.4-fpm
 sudo mysql_secure_installation
 
 ##Download worpress and extract copy
@@ -27,7 +27,7 @@ wget https://wordpress.org/latest.tar.gz
 echo "The latest WordPress release has been downloaded.What do you want the name of your website to be?"
 read websitename
 tar -xzvf latest.tar.gz
-mkdir /var/www/$websitename
+mkdir /var/www/html/$websitename
 cp -R ./wordpress/* /var/www/html/$websitename/
 sudo chown -R www-data:www-data /var/www/html/$websitename/
 sudo chmod -R 755 /var/www/html/$websitename/ 
